@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Matheus Campos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body class="bg-light text-dark" id="top">
+  <!-- Header & Navigation -->
+  <header class="bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="text-decoration-none">
+          <h3 class="m-0 text-primary fw-bold">Matheus Campos</h3>
+        </a>
+        <nav class="d-none d-md-flex nav-menu text-uppercase fw-bold">
+          <a href="#sobre" class="nav-item text-decoration-none text-dark">Sobre</a>
+          <a href="#projetos" class="nav-item text-decoration-none text-dark">Projetos</a>
+          <a href="#conteudos" class="nav-item text-decoration-none text-dark">Conteúdos</a>
+          <a href="#experiencias" class="nav-item text-decoration-none text-dark">Experiências</a>
+          <a href="#habilidades" class="nav-item text-decoration-none text-dark">Habilidades</a>
+          <a href="#contato" class="nav-item text-decoration-none text-dark">Contato</a>
+        </nav>
+        <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-primary">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="d-flex flex-column">
+        <a href="#sobre" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Sobre</a>
+        <a href="#projetos" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Projetos</a>
+        <a href="#conteudos" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Conteúdos</a>
+        <a href="#experiencias" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Experiências</a>
+        <a href="#habilidades" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Habilidades</a>
+        <a href="#contato" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Contato</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="py-5 bg-primary-soft" id="sobre">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <div class="profile-pic mx-auto">
+            <img src="/images/matheus.png" alt="Matheus Campos">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <h1 class="display-4 fw-bold text-primary mb-3">Matheus Campos</h1>
+          <h2 class="h4 text-muted mb-4">Analista de Dados / Analista de TI / Criador de Conteúdo</h2>
+          <p class="lead mb-4">
+            Profissional de Tecnologia da Informação com formação em Sistemas e Informação e pós-graduação em Governança de TI. Atua com foco em Análise de Dados, unindo conhecimentos em Python, SQL, Power BI e Excel para transformar dados em insights estratégicos. Possui projetos autorais voltados a esportes e games, além de criar conteúdos educativos sobre dados com uma abordagem criativa e visual. Busca oportunidades que unam tecnologia, análise e comunicação clara de resultados.
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <div class="contact-info">
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>campos98matheus@gmail.com</span>
+            </div>
+            <div class="contact-info">
+              <i class="fas fa-phone contact-icon"></i>
+              <span>(35) 98422-8704</span>
+            </div>
+            <div class="contact-info">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>Itajubá - MG</span>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#projetos" class="btn btn-primary px-4 py-2 animated-btn">Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline-primary px-4 py-2">Contato</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-5" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+      <div class="position-relative">
+        <div class="project-carousel">
+          <div class="row project-slider" id="projectsSlider">
+            <!-- Projeto 1 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  <img src="images/projeto/ChatGPT Image 6 de mai. de 2025, 19_24_06.png" alt="Projeto 1">
+                </div>
+                <h5 class="text-primary mb-2">O Que Jogar Hoje?</h5>
+                <p class="text-muted mb-3">Projeto de recomendação de jogos baseado em dados da RAWG API. Utilizei Python para coleta e tratamento das informações, categorizando os jogos por gênero, nota e tempo de duração. Em seguida, criei um dashboard interativo no Power BI que sugere títulos personalizados conforme o tempo disponível do usuário e sua preferência de estilo. Ideal para quem quer descobrir bons jogos rapidamente.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Power BI</span>
+                  <span class="project-tag">Análise de Dados</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="https://github.com/matheuscampos-it/OQueJogarHoje" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projeto 2 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  <!-- <img src="project2.jpg" alt="Projeto 2"> -->
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 2</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projeto 3 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  <!-- <img src="project3.jpg" alt="Projeto 3"> -->
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 3</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Django</span>
+                  <span class="project-tag">PostgreSQL</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projeto 4 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 4</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">Firebase</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projeto 5 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 5</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Vue.js</span>
+                  <span class="project-tag">Express</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Botões de navegação do carrossel -->
+        <button class="carousel-control prev" id="prevProject">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-control next" id="nextProject">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+ <!-- Conteúdos Online Section -->
+<section class="py-5 bg-white" id="conteudos">
+  <div class="container">
+    <h2 class="section-title">Meus Conteúdos</h2>
+    
+    <div class="row mb-5">
+      <div class="col-12 text-center mb-4">
+        <p class="lead">Compartilho experiências, devlogs e bate-papos sobre tecnologia e análise de dados através das minhas redes sociais.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <!-- LinkedIn -->
+      <div class="col-md-6 mb-4">
+        <div class="content-card h-100 bg-light p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <div class="content-icon bg-primary text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <h4 class="ms-3 mb-0">LinkedIn</h4>
+          </div>
+          
+          <p>Gosto de traduzir dados em histórias. Aqui compartilho aprendizados, ferramentas e projetos que me ajudam (e podem te ajudar também!) a entender o mundo com mais clareza.</p>
+          
+          <div class="text-center mt-4 mb-4">
+            <a href="https://www.linkedin.com/in/matheus-campos-it/recent-activity/shares/" target="_blank" class="linkedin-profile-link">
+              <div class="social-preview-container">
+                <img src="/images/redes/linkedin.png" alt="Perfil LinkedIn" class="linkedin-preview-image img-fluid rounded shadow-sm">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <i class="fab fa-linkedin fa-3x mb-3"></i>
+                    <p>Ver publicações no LinkedIn</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="mt-4 text-center">
+            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="btn btn-outline-primary">
+              <i class="fab fa-linkedin me-2"></i>Seguir no LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- YouTube -->
+      <div class="col-md-6 mb-4">
+        <div class="content-card h-100 bg-light p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <div class="content-icon bg-danger text-white">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <h4 class="ms-3 mb-0">YouTube</h4>
+          </div>
+          
+          <p>Compartilho o que aprendo sobre dados, programação e tecnologia com vídeos diretos, simples e feitos por quem também está em constante evolução.</p>
+          
+          <div class="text-center mt-4 mb-4">
+            <a href="https://www.youtube.com/@horian-dados/videos" target="_blank" class="youtube-channel-link">
+              <div class="social-preview-container">
+                <img src="/images/redes/youtube.png" alt="Canal YouTube" class="youtube-preview-image img-fluid rounded shadow-sm">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <i class="fab fa-youtube fa-3x mb-3 text-danger"></i>
+                    <p>Assistir vídeos no YouTube</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="mt-4 text-center">
+            <a href="https://www.youtube.com/@horian-dados" target="_blank" class="btn btn-outline-danger">
+              <i class="fab fa-youtube me-2"></i>Inscrever-se no Canal
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Experience Section -->
+  <section class="py-5 bg-primary-soft" id="experiencias">
+    <div class="container">
+      <h2 class="section-title">Experiências</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="d-flex justify-content-between mb-2">
+                <h5 class="text-primary mb-0">Cabelauto Cabos Elétricos LTDA.</h5>
+                <span class="badge bg-light text-dark">2025 - Presente</span>
+              </div>
+              <h6 class="text-muted">Analista de Ti Jr.</h6>
+              <p>Atuo como Analista de TI garantindo o funcionamento eficiente de sistemas e infraestrutura, com foco em manutenção preventiva e corretiva, suporte técnico e segurança da informação. Minha rotina envolve desde o diagnóstico e resolução de problemas técnicos até a otimização de recursos e apoio à tomada de decisão da gerência.
+              </p>
+            </div>
+            
+            <div class="experience-item">
+              <div class="d-flex justify-content-between mb-2">
+                <h5 class="text-primary mb-0">NeST Digital</h5>
+                <span class="badge bg-light text-dark">2022 - 2023</span>
+              </div>
+              <h6 class="text-muted">Estágio em Desenvolvimento Front-end Web</h6>
+              <p>Atuei no desenvolvimento de interfaces web modernas e responsivas com foco em performance e experiência do usuário. Trabalhei com tecnologias como HTML, CSS, JavaScript, Bootstrap e WordPress, desenvolvendo páginas e soluções e-commerce com WooCommerce, Elementor e temas como Divi.</p>
+            </div>
+            
+            <div class="experience-item">
+              <div class="d-flex justify-content-between mb-2">
+                <h5 class="text-primary mb-0">PRPPG - Universidade Federal de Itajubá</h5>
+                <span class="badge bg-light text-dark">2021 - 2021</span>
+              </div>
+              <h6 class="text-muted">Suporte em TI</h6>
+              <p>Estagiário de TI na Pró-Reitoria de Pesquisa e Pós Graduação (PRPPG) da UNIFEI.
+                Atuação em suporte técnico e atualizações no site oficial da PRPPG.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-5" id="habilidades">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="h5 mb-3 text-primary">Habilidades Técnicas</h3>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>HTML/CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>JavaScript</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>Python</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>Power BI</span>
+              <span>70%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>SQL</span>
+              <span>70%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <h3 class="h5 mb-3 text-primary">Outras Habilidades</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="fas fa-comments skill-icon"></i>
+                <h5>Comunicação</h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="fas fa-users skill-icon"></i>
+                <h5>Trabalho em Equipe</h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="fas fa-lightbulb skill-icon"></i>
+                <h5>Resolução de Problemas</h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="fas fa-tasks skill-icon"></i>
+                <h5>Gestão de Projetos</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contato">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="bg-white p-4 rounded shadow-sm">
+            <form id="contactForm" method="post" action="https://formsubmit.co/campos98matheus@gmail.com">
+              <input type="hidden" name="_next" value="https://seusiteaqui.com/obrigado.html">
+              <input type="hidden" name="_subject" value="Novo contato do seu portfólio">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Responderei o mais breve possível.">
+              <input type="hidden" name="_template" value="table">
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="subject" class="form-label">Assunto</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto da mensagem" required>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="message" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary px-4 py-2 animated-btn">Enviar Mensagem</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h4 class="h5 mb-3">Sobre Mim</h4>
+          <p>Profissional de Tecnologia da Informação com formação em Sistemas de Informação e pós-graduação em Governança de TI. Atua com foco em Análise de Dados, unindo conhecimentos em Python, SQL, Power BI e Excel para transformar dados em insights estratégicos. Possui projetos autorais voltados a esportes e games, além de criar conteúdos educativos sobre dados com uma abordagem criativa e visual. Busca oportunidades que unam tecnologia, análise e comunicação clara de resultados.</p>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h4 class="h5 mb-3">Links Rápidos</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#sobre" class="text-decoration-none text-light">Sobre</a></li>
+            <li class="mb-2"><a href="#projetos" class="text-decoration-none text-light">Projetos</a></li>
+            <li class="mb-2"><a href="#conteudos" class="text-decoration-none text-light">Conteúdos</a></li>
+            <li class="mb-2"><a href="#experiencias" class="text-decoration-none text-light">Experiências</a></li>
+            <li class="mb-2"><a href="#habilidades" class="text-decoration-none text-light">Habilidades</a></li>
+            <li><a href="#contato" class="text-decoration-none text-light">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="h5 mb-3">Redes Sociais</h4>
+          <div class="d-flex">
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 bg-light opacity-25">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Matheus Campos Sousa. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <a href="#top" class="scroll-up"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+      
+      // Show/hide scroll to top button
+      const scrollUp = document.querySelector('.scroll-up');
+      
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          scrollUp.classList.add('visible');
+        } else {
+          scrollUp.classList.remove('visible');
+        }
+      });
+    });
+
+    // Código para o carrossel de projetos
+document.addEventListener('DOMContentLoaded', function() {
+  const projectSlider = document.getElementById('projectsSlider');
+  const prevProject = document.getElementById('prevProject');
+  const nextProject = document.getElementById('nextProject');
+  const projectItems = document.querySelectorAll('.project-item');
+  
+  // Variáveis para controlar o carrossel
+  let currentIndex = 0;
+  let projectsShown = 3;
+  const totalProjects = projectItems.length;
+  
+  // Ajusta o número de projetos mostrados com base no tamanho da tela
+  function updateProjectsShown() {
+    if (window.innerWidth < 768) {
+      projectsShown = 1;
+    } else if (window.innerWidth < 992) {
+      projectsShown = 2;
+    } else {
+      projectsShown = 3;
+    }
+    
+    // Assegura que o índice atual seja válido após redimensionamento
+    if (currentIndex > totalProjects - projectsShown) {
+      currentIndex = totalProjects - projectsShown;
+      if (currentIndex < 0) currentIndex = 0;
+      updateCarousel();
+    }
+  }
+  
+  // Função para mover o carrossel
+  function moveCarousel(direction) {
+    if (direction === 'next') {
+      if (currentIndex < totalProjects - projectsShown) {
+        currentIndex++;
+      } else {
+        currentIndex = 0; // Volta ao início
+      }
+    } else {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = totalProjects - projectsShown; // Vai para o final
+        if (currentIndex < 0) currentIndex = 0;
+      }
+    }
+    
+    updateCarousel();
+  }
+  
+  // Atualiza a posição do carrossel
+  function updateCarousel() {
+    const itemWidth = projectItems[0].offsetWidth;
+    const offset = -currentIndex * itemWidth;
+    projectSlider.style.transform = `translateX(${offset}px)`;
+  }
+  
+  // Adiciona os event listeners
+  prevProject.addEventListener('click', () => moveCarousel('prev'));
+  nextProject.addEventListener('click', () => moveCarousel('next'));
+  
+  // Atualiza quando o tamanho da tela muda
+  window.addEventListener('resize', () => {
+    updateProjectsShown();
+    updateCarousel();
+  });
+  
+  // Inicializa
+  updateProjectsShown();
+});
+  </script>
+</body>
+</html>
