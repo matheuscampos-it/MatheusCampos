@@ -526,7 +526,7 @@
   top: 10px;
   bottom: 10px;
   width: 2px;
-  background-color: #3E1F47;
+  background-color: var(--roxo-escuro) !important;
 }
 
 .education-item {
@@ -548,7 +548,7 @@
   top: 0;
   width: 40px;
   height: 40px;
-  background-color: #3E1F47;
+  background-color: var(--roxo-escuro) !important;
   border-radius: 50%;
   display: flex;
   align-items: center;
