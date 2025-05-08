@@ -510,7 +510,7 @@
   transform: translateX(-50%);
   width: 50px;
   height: 3px;
-  background-color: var(--bs-primary);
+  background-color: var(--roxo-escuro) !important;
 }
 
 /* Timeline de educação */
