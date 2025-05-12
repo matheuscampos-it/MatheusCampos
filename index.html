@@ -27,9 +27,6 @@
           <a href="#habilidades" class="nav-item text-decoration-none text-dark">Habilidades</a>
           <a href="#contato" class="nav-item text-decoration-none text-dark">Contato</a>
         </nav>
-        <button id="toggleTheme" class="btn btn-outline-secondary ms-3">
-          <i class="fas fa-moon"></i>
-        </button>
         <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
           <i class="fas fa-bars"></i>
         </button>
@@ -39,9 +36,6 @@
 
   <!-- Mobile Menu -->
   <div class="offcanvas offcanvas-end" id="mobileMenu">
-    <button id="toggleTheme" class="btn btn-outline-secondary ms-3">
-      <i class="fas fa-moon"></i>
-    </button>
     <div class="offcanvas-header">
       <h5 class="offcanvas-title text-primary">Menu</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -98,143 +92,124 @@
   </section>
 
   <!-- Projects Section -->
-<section class="py-5" id="projetos">
-  <div class="container">
-    <h2 class="section-title">Projetos</h2>
-    <div class="position-relative">
-      <div class="project-carousel">
-        <div class="row project-slider" id="projectsSlider">
-          <!-- Projeto 1 -->
-          <div class="col-md-4 project-item">
-            <div class="project-card bg-white shadow-sm p-4 rounded">
-              <div class="project-img">
-                <img src="images/projeto/ChatGPT Image 6 de mai. de 2025, 19_24_06.png" alt="Projeto 1">
-              </div>
-              <h5 class="text-primary mb-2">O Que Jogar Hoje?</h5>
-              <p class="text-muted mb-3">Projeto de recomendação de jogos baseado em dados da RAWG API. Utilizei Python para coleta e tratamento das informações, categorizando os jogos por gênero, nota e tempo de duração.</p>
-              <div class="mb-3">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">Power BI</span>
-                <span class="project-tag">Análise de Dados</span>
-              </div>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="projeto1"><i class="fas fa-eye me-1"></i> Ver Detalhes</button>
-                <a href="https://github.com/matheuscampos-it/OQueJogarHoje" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Projeto 2 -->
-          <div class="col-md-4 project-item">
-            <div class="project-card bg-white shadow-sm p-4 rounded">
-              <div class="project-img">
-                <img src="/api/placeholder/400/200" alt="Dashboard Vendas">
-              </div>
-              <h5 class="text-primary mb-2">Dashboard de Vendas</h5>
-              <p class="text-muted mb-3">Dashboard interativo para análise de vendas com filtros dinâmicos, indicadores de performance e visualizações comparativas para tomada de decisão.</p>
-              <div class="mb-3">
-                <span class="project-tag">Power BI</span>
-                <span class="project-tag">DAX</span>
-                <span class="project-tag">SQL</span>
-              </div>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="projeto2"><i class="fas fa-eye me-1"></i> Ver Detalhes</button>
-                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+  <section class="py-5" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+      <div class="position-relative">
+        <div class="project-carousel">
+          <div class="row project-slider" id="projectsSlider">
+            <!-- Projeto 1 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  <img src="images/projeto/ChatGPT Image 6 de mai. de 2025, 19_24_06.png" alt="Projeto 1">
+                </div>
+                <h5 class="text-primary mb-2">O Que Jogar Hoje?</h5>
+                <p class="text-muted mb-3">Projeto de recomendação de jogos baseado em dados da RAWG API. Utilizei Python para coleta e tratamento das informações, categorizando os jogos por gênero, nota e tempo de duração. Em seguida, criei um dashboard interativo no Power BI que sugere títulos personalizados conforme o tempo disponível do usuário e sua preferência de estilo. Ideal para quem quer descobrir bons jogos rapidamente.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Power BI</span>
+                  <span class="project-tag">Análise de Dados</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="https://github.com/matheuscampos-it/OQueJogarHoje" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <!-- Projeto 3 -->
-          <div class="col-md-4 project-item">
-            <div class="project-card bg-white shadow-sm p-4 rounded">
-              <div class="project-img">
-                <img src="/api/placeholder/400/200" alt="Sistema de Gestão">
-              </div>
-              <h5 class="text-primary mb-2">Sistema de Gestão</h5>
-              <p class="text-muted mb-3">Sistema web para gerenciamento de estoque, clientes e fornecedores com relatórios automatizados e controle de acesso por nível de usuário.</p>
-              <div class="mb-3">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">Django</span>
-                <span class="project-tag">PostgreSQL</span>
-              </div>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="projeto3"><i class="fas fa-eye me-1"></i> Ver Detalhes</button>
-                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Projeto 4 -->
-          <div class="col-md-4 project-item">
-            <div class="project-card bg-white shadow-sm p-4 rounded">
-              <div class="project-img">
-                <img src="/api/placeholder/400/200" alt="App de Finanças">
-              </div>
-              <h5 class="text-primary mb-2">App de Finanças Pessoais</h5>
-              <p class="text-muted mb-3">Aplicativo para controle financeiro pessoal com categorização de gastos, metas de economia e visualização de dados por período.</p>
-              <div class="mb-3">
-                <span class="project-tag">React Native</span>
-                <span class="project-tag">Firebase</span>
-              </div>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="projeto4"><i class="fas fa-eye me-1"></i> Ver Detalhes</button>
-                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+            
+            <!-- Projeto 2 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  <!-- <img src="project2.jpg" alt="Projeto 2"> -->
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 2</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <!-- Projeto 5 -->
-          <div class="col-md-4 project-item">
-            <div class="project-card bg-white shadow-sm p-4 rounded">
-              <div class="project-img">
-                <img src="/api/placeholder/400/200" alt="Web Scraper">
-              </div>
-              <h5 class="text-primary mb-2">Web Scraper para E-commerce</h5>
-              <p class="text-muted mb-3">Ferramenta de coleta automatizada de dados de sites de varejo com análise de preços e notificação de ofertas por email.</p>
-              <div class="mb-3">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">Beautiful Soup</span>
-                <span class="project-tag">Pandas</span>
-              </div>
-              <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="projeto5"><i class="fas fa-eye me-1"></i> Ver Detalhes</button>
-                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+            
+            <!-- Projeto 3 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  <!-- <img src="project3.jpg" alt="Projeto 3"> -->
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 3</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Django</span>
+                  <span class="project-tag">PostgreSQL</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal para detalhes dos projetos -->
-      <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-primary" id="projectModalLabel">Detalhes do Projeto</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <!-- Projeto 4 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 4</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Angular</span>
+                  <span class="project-tag">Firebase</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
+              </div>
             </div>
-            <div class="modal-body" id="projectModalBody">
-              <!-- O conteúdo será injetado via JavaScript -->
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              <a href="#" class="btn btn-primary" id="projectLiveDemo" target="_blank">Ver Demo</a>
-              <a href="#" class="btn btn-outline-primary" id="projectGithub" target="_blank"><i class="fab fa-github me-1"></i> Código</a>
+            
+            <!-- Projeto 5 -->
+            <div class="col-md-4 project-item">
+              <div class="project-card bg-white shadow-sm p-4 rounded">
+                <div class="project-img">
+                  [Imagem do Projeto]
+                </div>
+                <h5 class="text-primary mb-2">Projeto 5</h5>
+                <p class="text-muted mb-3">Breve descrição do projeto e das tecnologias utilizadas.</p>
+                <div class="mb-3">
+                  <span class="project-tag">Vue.js</span>
+                  <span class="project-tag">Express</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link me-1"></i> Ver Demo</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i> Código</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        
+        <!-- Botões de navegação do carrossel -->
+        <button class="carousel-control prev" id="prevProject">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-control next" id="nextProject">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
-      
-      <!-- Botões de navegação do carrossel -->
-      <button class="carousel-control prev" id="prevProject">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button class="carousel-control next" id="nextProject">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
+    </section>
 
  <!-- Conteúdos Online Section -->
 <section class="py-5 bg-white" id="conteudos">
@@ -773,291 +748,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   });
 });
-
-  document.addEventListener('DOMContentLoaded', function() {
-  // Dados detalhados de cada projeto
-  const projectsData = {
-    'projeto1': {
-      title: 'O Que Jogar Hoje?',
-      description: `
-        <p>Um sistema de recomendação de jogos inteligente que ajuda usuários a descobrirem novos títulos com base em seus gostos, tempo disponível e plataformas que possuem.</p>
-        
-        <div class="project-section mt-4">
-          <h5>Problema</h5>
-          <p>Com milhares de jogos lançados todos os anos, muitos gamers enfrentam o "paradoxo da escolha" - ter tantas opções que acaba sendo difícil decidir o que jogar. Além disso, muitos não têm tempo para pesquisar e comparar jogos que realmente se encaixem nas suas preferências.</p>
-        </div>
-        
-        <div class="project-section mt-4">
-          <h5>Solução</h5>
-          <p>Criei um sistema que combina:</p>
-          <ul>
-            <li>Extração e processamento de dados da RAWG API (uma das maiores bases de dados de jogos)</li>
-            <li>Algoritmos de filtragem baseados em gênero, duração média, avaliações e plataformas</li>
-            <li>Interface visual intuitiva com Power BI para exploração e descoberta de jogos</li>
-          </ul>
-        </div>
-        
-        <div class="mt-4">
-          <h5>Tecnologias Utilizadas</h5>
-          <ul>
-            <li><strong>Python:</strong> Pandas para manipulação de dados, Requests para chamadas à API</li>
-            <li><strong>Power BI:</strong> Para a criação do dashboard interativo e visualizações</li>
-            <li><strong>API:</strong> Integração com a RAWG Game Database API</li>
-            <li><strong>Git/GitHub:</strong> Controle de versão e hospedagem do código</li>
-          </ul>
-        </div>
-      `,
-      images: [
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450'
-      ],
-      demoLink: '#',
-      githubLink: 'https://github.com/matheuscampos-it/OQueJogarHoje'
-    },
-    'projeto2': {
-      title: 'Dashboard de Vendas',
-      description: `
-        <p>Um dashboard corporativo completo para análise de vendas, com métricas chave de performance e visualizações interativas para tomada de decisão baseada em dados.</p>
-        
-        <div class="project-section mt-4">
-          <h5>Problema</h5>
-          <p>Uma empresa de varejo estava com dificuldades para acompanhar o desempenho de vendas de forma consolidada, já que os dados estavam distribuídos em diferentes sistemas e planilhas. Isso resultava em atrasos na tomada de decisão e falta de visibilidade sobre tendências importantes.</p>
-        </div>
-        
-        <div class="project-section mt-4">
-          <h5>Solução</h5>
-          <p>Desenvolvi um dashboard em Power BI que:</p>
-          <ul>
-            <li>Integra dados de múltiplas fontes (ERP, CRM, planilhas)</li>
-            <li>Apresenta KPIs essenciais (faturamento, margem, ticket médio)</li>
-            <li>Permite análises por produto, região, vendedor e período</li>
-            <li>Identifica padrões sazonais e oportunidades de crescimento</li>
-          </ul>
-        </div>
-        
-        <div class="mt-4">
-          <h5>Tecnologias Utilizadas</h5>
-          <ul>
-            <li><strong>Power BI:</strong> Desenvolvimento do dashboard e visualizações</li>
-            <li><strong>DAX:</strong> Criação de métricas calculadas avançadas</li>
-            <li><strong>SQL:</strong> Consultas para extração de dados do banco relacional</li>
-            <li><strong>Power Query:</strong> ETL e modelagem de dados</li>
-          </ul>
-        </div>
-      `,
-      images: [
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450'
-      ],
-      demoLink: '#',
-      githubLink: '#'
-    },
-    'projeto3': {
-      title: 'Sistema de Gestão',
-      description: `
-        <p>Um sistema web completo para gestão de estoque, clientes e fornecedores, com controle de acesso por níveis de usuário e relatórios automatizados.</p>
-        
-        <div class="project-section mt-4">
-          <h5>Problema</h5>
-          <p>Uma empresa de médio porte estava gerenciando seus processos através de planilhas e anotações manuais, causando erros, inconsistências e dificuldade no acompanhamento do fluxo operacional.</p>
-        </div>
-        
-        <div class="project-section mt-4">
-          <h5>Solução</h5>
-          <p>Desenvolvi um sistema web completo que:</p>
-          <ul>
-            <li>Centraliza o cadastro e gestão de produtos, clientes e fornecedores</li>
-            <li>Automatiza o controle de estoque com alertas de reposição</li>
-            <li>Gerencia pedidos e acompanha status de entrega</li>
-            <li>Gera relatórios personalizados para tomada de decisão</li>
-            <li>Controla acessos por níveis de permissão de usuários</li>
-          </ul>
-        </div>
-        
-        <div class="mt-4">
-          <h5>Tecnologias Utilizadas</h5>
-          <ul>
-            <li><strong>Python:</strong> Linguagem base do projeto</li>
-            <li><strong>Django:</strong> Framework web para desenvolvimento</li>
-            <li><strong>PostgreSQL:</strong> Banco de dados relacional</li>
-            <li><strong>HTML/CSS/JavaScript:</strong> Frontend e interatividade</li>
-            <li><strong>Bootstrap:</strong> Framework CSS para interface responsiva</li>
-          </ul>
-        </div>
-      `,
-      images: [
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450'
-      ],
-      demoLink: '#',
-      githubLink: '#'
-    },
-    'projeto4': {
-      title: 'App de Finanças Pessoais',
-      description: `
-        <p>Aplicativo mobile para controle de finanças pessoais com categorização automática de gastos, estabelecimento de metas e análises visuais do comportamento financeiro.</p>
-        
-        <div class="project-section mt-4">
-          <h5>Problema</h5>
-          <p>Muitas pessoas têm dificuldade em manter um controle efetivo de suas finanças, sem uma visão clara de para onde o dinheiro está indo e sem ferramentas práticas para criar e manter um orçamento.</p>
-        </div>
-        
-        <div class="project-section mt-4">
-          <h5>Solução</h5>
-          <p>Desenvolvi um aplicativo mobile que:</p>
-          <ul>
-            <li>Permite registro rápido de receitas e despesas</li>
-            <li>Categoriza automaticamente transações com machine learning</li>
-            <li>Cria orçamentos e acompanha o progresso em tempo real</li>
-            <li>Gera relatórios e gráficos para visualização de padrões de gastos</li>
-            <li>Envia alertas e sugestões para melhorar a saúde financeira</li>
-          </ul>
-        </div>
-        
-        <div class="mt-4">
-          <h5>Tecnologias Utilizadas</h5>
-          <ul>
-            <li><strong>React Native:</strong> Framework para desenvolvimento mobile</li>
-            <li><strong>Firebase:</strong> Autenticação, banco de dados e análises</li>
-            <li><strong>TensorFlow Lite:</strong> Machine learning para categorização</li>
-            <li><strong>Chart.js:</strong> Visualização de dados e gráficos</li>
-          </ul>
-        </div>
-      `,
-      images: [
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450'
-      ],
-      demoLink: '#',
-      githubLink: '#'
-    },
-    'projeto5': {
-      title: 'Web Scraper para E-commerce',
-      description: `
-        <p>Ferramenta automatizada para coleta e análise de dados de preços e produtos em sites de e-commerce, com alertas de ofertas personalizados.</p>
-        
-        <div class="project-section mt-4">
-          <h5>Problema</h5>
-          <p>Consumidores frequentemente perdem promoções e descontos em produtos que desejam comprar por não terem tempo de verificar constantemente os preços em diferentes lojas online.</p>
-        </div>
-        
-        <div class="project-section mt-4">
-          <h5>Solução</h5>
-          <p>Desenvolvi um sistema de web scraping que:</p>
-          <ul>
-            <li>Monitora preços de produtos em múltiplos e-commerces</li>
-            <li>Armazena histórico de preços para análise de tendências</li>
-            <li>Envia alertas por email quando o preço atinge um valor desejado</li>
-            <li>Gera relatórios comparativos entre lojas diferentes</li>
-            <li>Identifica padrões de descontos para prever melhores momentos de compra</li>
-          </ul>
-        </div>
-        
-        <div class="mt-4">
-          <h5>Tecnologias Utilizadas</h5>
-          <ul>
-            <li><strong>Python:</strong> Linguagem principal do projeto</li>
-            <li><strong>Beautiful Soup/Selenium:</strong> Ferramentas de web scraping</li>
-            <li><strong>Pandas:</strong> Análise e manipulação de dados</li>
-            <li><strong>SQLite:</strong> Armazenamento do histórico de preços</li>
-            <li><strong>Matplotlib/Seaborn:</strong> Visualização de dados e gráficos</li>
-          </ul>
-        </div>
-      `,
-      images: [
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450',
-        '/api/placeholder/800/450'
-      ],
-      demoLink: '#',
-      githubLink: '#'
-    }
-  };
-
-  // Manipulador de eventos para os botões "Ver Detalhes"
-  document.querySelectorAll('.view-project').forEach(button => {
-    button.addEventListener('click', function() {
-      const projectId = this.getAttribute('data-project-id');
-      const projectData = projectsData[projectId];
-      
-      if (projectData) {
-        // Atualizar o título do modal
-        document.getElementById('projectModalLabel').textContent = projectData.title;
-        
-        // Construir o carrossel de imagens
-        let imagesHtml = `
-          <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              ${projectData.images.map((img, i) => 
-                `<button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="${i}" ${i === 0 ? 'class="active"' : ''} aria-label="Slide ${i+1}"></button>`
-              ).join('')}
-            </div>
-            <div class="carousel-inner rounded">
-              ${projectData.images.map((img, i) => 
-                `<div class="carousel-item ${i === 0 ? 'active' : ''}">
-                  <img src="${img}" class="d-block w-100" alt="Imagem do projeto ${i+1}">
-                </div>`
-              ).join('')}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Próximo</span>
-            </button>
-          </div>
-        `;
-        
-        // Montar o conteúdo completo
-        const modalContent = `
-          ${imagesHtml}
-          <div class="project-details">
-            ${projectData.description}
-          </div>
-        `;
-        
-        // Injetar o conteúdo no modal
-        document.getElementById('projectModalBody').innerHTML = modalContent;
-        
-        // Atualizar links dos botões
-        const demoBtn = document.getElementById('projectLiveDemo');
-        const githubBtn = document.getElementById('projectGithub');
-        
-        demoBtn.href = projectData.demoLink;
-        githubBtn.href = projectData.githubLink;
-        
-        // Ocultar botão de demo se não houver link
-        if (!projectData.demoLink || projectData.demoLink === '#') {
-          demoBtn.style.display = 'none';
-        } else {
-          demoBtn.style.display = 'inline-block';
-        }
-        
-        // Ocultar botão do GitHub se não houver link
-        if (!projectData.githubLink || projectData.githubLink === '#') {
-          githubBtn.style.display = 'none';
-        } else {
-          githubBtn.style.display = 'inline-block';
-        }
-      }
-    });
-  });
-});
-
-document.getElementById('toggleTheme').addEventListener('click', function () {
-    document.body.classList.toggle('dark-mode');
-    
-    // Alterna o ícone
-    const icon = this.querySelector('i');
-    icon.classList.toggle('fa-moon');
-    icon.classList.toggle('fa-sun');
-  });
   </script>
 </body>
 </html>
